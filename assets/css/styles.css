@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/*====== Main Variables ======*/
+:root {
+  --font-family: "Roboto", open-sans;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #ffffff;
+  --primary-color: #309dd8;
+  --secondary-color: #dcebf6;
+  ---tertiary-color: #000000;
+  --line-color: #e9e5e5;
+
+  --margin-1: 0.5rem;
+  --margin-2: 1rem;
+  --margin-3: 3rem;
+  --margin-4: 5rem;
+
+  --padding-1: 0.5rem;
+  --padding-2: 1rem;
+  --padding-3: 3rem;
+
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/*====== Main Variables End ======*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: auto;
+}
+
+/*====== CSS Resets ======*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(---tertiary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+/*====== CSS Resets End ======*/
+
+/*====== Navbar ======*/
+nav {
+  position: sticky; /* navbar remains at the top no matter what */
+  top: 0;
+  left: 0;
+  z-index: 1; /* makes sure the navbar displays over any other element on the web page */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+}
+
+nav h1 {
+  color: var(--primary-color);
+}
+  
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(---tertiary-color);
+  border-bottom: 2px solid var(---tertiary-color);
+}
+  
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+  
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 3rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+/*====== Navbar End ======*/
+
+/*====== Home ======*/
+.home {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  max-width: 68.75rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: var(--margin-4);
+  padding: 4rem;
+}
+
+.home-content {
+  width: 80%;
+  padding: var(--padding-1);
+}
+
+.home img {
+  border-radius: 50%;
+  width: 30rem;
+  height: auto;
+}
+
+.home h1 {
+  padding-bottom: var(--padding-1);
+}
+
+.home p {
+  line-height: var(--line-height);
+  padding: 1rem 0;
+  text-align: left;
+}
+/*====== Home End ======*/
+
+/*====== Skills ======*/
+.skills {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: var(--margin-4);
+  margin-bottom: var(--margin-4);
+  padding: var(--padding-2);
+}
+
+.skills h2 {
+  padding: var(--padding-2);
+  text-align: center;
+}
+
+.resume-top {
+  text-align: center;
+}
+
+.resume-top p {
+  padding: var(--padding-1);
+}
+
+.resume-btn {
+  color: var(--primary-color);
+  /*width: 15%;*/
+  width: 8rem;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+
+.resume-btn:hover {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.skills h3 {
+  padding-bottom: 0.7rem;
+}
+
+.skills p {
+  line-height: var(--line-height);
+  text-align: left;
+}
+
+.resume-title {
+  font-weight: bold;
+}
+
+.resume-container {
+  padding-top: 2.5rem;
+}
+
+.resume-item {
+  padding-top: 0.8rem;
+}
+/*====== Skills End ======*/
+
+/*====== Projects ======*/
+.projects {
+  max-width: 1500px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: var(--margin-4);
+  margin-bottom: var(--margin-4);
+}
+
+.projects h2 {
+  padding: var(--padding-1);
+  text-align: center;
+}
+
+.projects-filter {
+  padding-top: var(--padding-1);
+  text-align: center;
+}
+
+.projects-filter Button {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.projects-filter Button:hover {
+  background-color: #ddd;
+}
+
+.projects-filter Button.active {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+/* Clear floats after rows */ 
+.projects-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add padding between each column */
+.projects-row,
+.projects-row > .projects-column {
+  padding: 12px;
+}
+
+/* Create three equal columns that floats next to each other */
+.projects-column {
+  float: left;
+  width: 33.33%;
+  /*width: 50%;*/
+  display: none;
+  min-height: 29rem;
+}
+
+/* Show the filtered elements */
+.show {
+  display: block;
+}
+
+.projects-content {
+  padding: 25px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+
+.projects-column h3 {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding-bottom: var(--padding-1);
+}
+
+.projects-column p {
+  text-align: left;
+  line-height: var(--line-height);
+  padding-bottom: var(--padding-2);
+  background-color: var(--secondary-color);
+}
+
+.projects-content Button {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5.5px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.projects-content Button:hover {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding: 3rem;
+  width: 100%; 
+  height: 100%; 
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0, 0, 0, 0.836); 
+  /* hide or show the scroll bar */
+  overflow: auto;
+}
+
+.modal-content {
+  margin: auto;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  width: 55%;
+}
+
+.projects-content-modal {
+  text-align: center;
+}
+
+.projects-content-modal img {
+  display: block;
+  margin: auto;
+}
+
+.projects-content-modal p {
+  background-color: var(--bg-color);
+  padding-top: var(--padding-2);
+  text-align: left;
+}
+
+.close {
+  color: var(--bg-color);
+  background: none;
+  font-size: 40px;
+  position:absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--line-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+/*====== Projects End ======*/
+
+/*====== About ======*/
+.about {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: var(--margin-4);
+  margin-bottom: var(--margin-4);
+  padding: var(--padding-2);
+}
+
+.about h2 {
+  padding: var(--padding-1);
+  text-align: center;
+}
+
+.about p {
+  line-height: var(--line-height);
+  padding: var(--padding-1);
+  text-align: left;
+  text-indent: 3em;
+}
+
+/* rounded images */
+.about-img {
+  border-radius: 5px;
+}
+
+.about-row {
+  padding-top: var(--padding-1);;
+}
+
+.about-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clearfix (clear floats) */
+.about-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*====== About End ======*/
+
+/*====== Contact ======*/
+.contact {
+  margin-top: 2rem;
+  margin-bottom: var(--margin-4);
+}
+
+.contact h2, .contact p {
+  text-align: center;
+  margin-bottom: var(--margin-2);
+}
+/*====== Contact End ======*/
+
+/*====== Footer ======*/
+.divider {
+  border: 0.5px solid var(--line-color);
+  border-radius: 5px;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+  margin: 10px 10px;
+}
+
+footer {
+  padding: 3rem;
+  text-align: center;
+  line-height: var(--line-height);
+}
+/*====== Footer End ======*/
+
+/*====== Scroll ======*/
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+/*====== Scroll End ======*/
+
+/*====== Responsive ======*/
+/* Responsive - changes reflects on screen with a width of 720px and below*/
+@media screen and (max-width: 920px) {
+  .home {
+    margin-top: var(--margin-1);
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .projects-column {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav{
+    padding: 1rem 1.5rem;
+  } 
+
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.0s ease-in;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .home img {
+    width: 90%;
+    height: auto;
+  }
+
+  .home {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .skills {
+    margin-left: var(--margin-2);
+    margin-right: var(--margin-2);
+  }
+
+  .projects {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+
+  .about {
+    margin-left: var(--margin-2);
+    margin-right: var(--margin-2);
+  }
+
+  .about-column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+/*====== Responsive End ======*/

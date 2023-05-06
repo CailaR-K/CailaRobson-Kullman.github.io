@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="'viewport">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
+
+    <title>Caila Robson-Kullman's Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Caila Robson-Kullman</h1>
+      <ul class="navigation">          
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- hamburger menu - nav menu on mobile, is hidden on desktop -->
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <img src="assets/images/img_portrait.jpg" alt="caila_portrait" loading="lazy"/>
+      <div class="home-content">
+        <h2>Hi, I'm Caila.</h2>
+        <p>
+          I’m a User Experience Designer, Product Designer and Software Developer 
+          with a background in web/game development, prototyping and user testing. 
+          I live in Saskatoon, Saskatchewan, Canada. With my studies in computer 
+          science, art and psychology, I design digital products that are functional 
+          and beautiful.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2>My Career Journey </h2>
+      <div class="resume-top">
+      <p>
+        My goal is to create intuitive and engaging experiences for users. I excel 
+        at taking complex tasks and distilling them down to their core components,
+        making them both more accessible and efficient for end-users. My expertise 
+        spans multiple programming languages and design applications, allowing me 
+        to adapt quickly to new environments and requirements. 
+      </p>
+      <p>
+        I am currently searching for exciting opportunities in the design and 
+        technology fields, preferably located in Saskatoon, although I am open to 
+        remote positions as well. Ultimately, I strive to work on projects that 
+        positively impact our world through technology.
+      </p>
+      <a href="assets/files/Caila.Robson-Kullman's.Resume.pdf" download="Caila.Robson-Kullman's.Resume">
+        <button class="resume-btn"><i class="download"></i> Resume</button>
+      </a>
+      </div>
+
+      <div class="resume-container">
+        <h3>Experience</h3>
+        <div class="resume-item">
+          <p class="resume-title">Collection History and Web Project Lead / Snelgrove Gallery</p>
+          <p class="resume-date">November 2021 - Present, Saskatoon, SK</p>
+          <p>
+            Developing online content with Cascade, updating the database and social 
+            media for the Snelgrove Gallery and partner galleries, and revamping of 
+            the USask Art Galleries and Collection website.
+          </p>
+        </div>
+        <div class="resume-item">
+          <p class="resume-title">Programming Assistant / PAVED Arts</p>
+          <p class="resume-date">May - August 2021, Saskatoon, SK</p>
+          <p>
+            Online maintenance, including updating the website with WordPress, 
+            and digital archiving. Organizing the summer youth program advertisement, 
+            facilitators support, and social media posts. Coordinating artist 
+            contracts, getting quotes for services, and researching equipment. 
+          </p>
+        </div>
+        <div class="resume-item">
+          <p class="resume-title">Development Team / Shared Spaces</p>
+          <p class="resume-date">September 2019 - June 2020, Saskatoon, SK</p>
+          <p>
+            Developing solutions for the digital enhancement of art experiences
+            for SK residents as part of a team. Researching project areas, meeting
+            with community members to gain insight, analyzing data, prototyping,
+            troubleshooting and presenting ideas at a conference. The final product 
+            was an Augmented Reality app. 
+          </p>
+        </div>
+      </div>
+
+      <div class="resume-container">
+        <h3>Education</h3>
+        <div class="resume-item">
+          <p class="resume-title">University of Saskatchewan</p>
+          <p class="resume-date">BA&Sc. in Interactive Systems Design</p>
+          <p>
+            Minors in Digital Culture and New Media, Psychology, and Studio Art
+          </p>
+        </div>
+      </div>
+
+      <div class="resume-container">
+        <h3>Skills</h3>
+        <div class="resume-item">
+          <p class="resume-title">Design Tools</p>
+          <p>
+            WordPress, Cascade, Confluence/Jira, Figma, Whimsical, Maze, 
+            Adobe Creative Suite, Cinema 4D
+          </p>
+        </div>
+        <div class="resume-item">
+          <p class="resume-title">Design Skills</p>
+          <p>
+            Prototyping, wireframing, journey mapping, personas, user research, 
+            information architecture, usability testing, heuristic evaluation
+          </p>
+        </div>
+        <div class="resume-item">
+          <p class="resume-title">Languages</p>
+          <p>
+            Java, Python, C, C#, HTML, CSS, Javascript
+          </p>
+        </div>
+        <div class="resume-item">
+          <p class="resume-title">Development Tools</p>
+          <p>
+            JetBrains Suite, Visual Studio Code, GitHub, GitLab, Unity
+          </p>
+        </div>
+        <div class="resume-item">
+          <p class="resume-title">Development Skills</p>
+          <p>
+            Unit testing, problem solving,GUI design, algorithm time and space 
+            requirements, data analysis, Agile and Waterfall processes, event-based 
+            behaviour, UNIX/Linux commands, BASH shell scripts
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Projects Section-->
+    <section class="projects" id="projects">
+      <h2>My Recent Projects</h2>
+      <div class="projects-filter" id="projects-filter">
+        <button class="projects-filter-btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="projects-filter-btn" onclick="filterSelection('development')"> Development</button>
+        <button class="projects-filter-btn" onclick="filterSelection('code')"> Code</button>
+        <button class="projects-filter-btn" onclick="filterSelection('design')"> Design</button>
+      </div>
+      
+      <div class="projects-row">
+  
+        <div class="projects-column development">
+          <div class="projects-content">
+            <img src="assets/images/img_shared_spaces.jpg" alt="Shared Spaces" style="width:100%">
+            <h3>Shared Spaces</h3>
+            <p>Enhancing art experiences through AR for Saskatchewan residents.</p>
+            <button href="#" target="_blank" id="myBtn" onclick="modalDisplay('myBtn','myModal')">View Project</button>
+            <div id="myModal" class="modal" >
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_shared_spaces.jpg" alt="Shared Spaces" style="width:100%;max-width:1000px">
+                <p>
+                  As part of a user engagement team for connecting Saskatchewan 
+                  residents with art, I solved multiple challenges with innovative 
+                  technological solutions. My responsibilities included conducting 
+                  research, gathering patron feedback, and creating visualizations 
+                  such as personas, service blueprints, journey maps, storyboards, 
+                  sitemaps, wireframes, and prototypes. I also participated in 
+                  hackathons, explored Augmented Reality designs, addressed 
+                  technical issues encountered during development, redesigned 
+                  problematic features, composed the brand identity of our products,
+                  and presented them at conferences with confidence and clarity.
+                </p>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="projects-column design">
+          <div class="projects-content">
+          <img src="assets/images/imag_usask_art_galleries_and_collection.jpg" alt="USask Art Galleries and Collection" style="width:100%">
+            <h3>USask Art Galleries</h3>
+            <p>Redesigning an art gallery website for a more intuitive layout.</p>
+            <button href="#" target="_blank" id="myBtn1" onclick="modalDisplay('myBtn1','myModal1')">View Project</button>
+            <div id="myModal1" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/imag_usask_art_galleries_and_collection_full.jpg" alt="USask Art Galleries and Collection" style="width:100%;max-width:1000px">
+                <p>
+                  To enhance the online presence of our local art gallery, I 
+                  redesigned the website to prioritize usability and accurately 
+                  represent our professional galleries, student gallery, and 
+                  impressive collection. Prior to beginning the design process, I 
+                  conducted research on current challenges and sought inspiration 
+                  from leading international gallery sites. Using Figma, I created 
+                  detailed wireframes and interactive prototypes that could easily
+                  be shared with stakeholders. Facilitating a productive 
+                  collaboration with the University of Saskatchewan IT team was 
+                  important in this project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="projects-column development">
+          <div class="projects-content">
+          <img src="assets/images/img_e.x.o..jpg" alt="E.X.O." style="width:100%">
+            <h3>E.X.O.</h3>
+            <p>Building a lively game that combines combat and farming mechanics.</p>
+            <button href="#" target="_blank" id="myBtn2" onclick="modalDisplay('myBtn2','myModal2')">View Project</button>
+            <div id="myModal2" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_e.x.o..jpg" alt="E.X.O." style="width:100%;max-width:1000px">
+                <p>
+                  Our challenge was to develop a game blending fighting mechanics 
+                  with agricultural activities. The development period lasted for 
+                  one term with a team of ten members using the programming 
+                  language C#. The project encompassed a project pitch, 
+                  documentation of assets and requirements, weekly sprint reviews, 
+                  showcasing of the prototype, alpha, beta, and the final product 
+                  demo. In my capacity as the designated Test Lead, I focused on 
+                  implementing unit and functionality tests with players, analysing
+                  Unity Analytics, recommending bug resolutions, and balancing the 
+                  game’s features. Additionally, I participated in lead meetings, 
+                  assisted in refining the game design, coded specific components 
+                  (day-night cycles, illumination systems in 3D/2D, and user 
+                  interfaces elements), prepared reports, and actively took part 
+                  in the concluding demonstration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="projects-column development">
+          <div class="projects-content">
+          <img src="assets/images/img_space_pirates.jpg" alt="Space Pirates" style="width:100%">
+            <h3>Space Pirates</h3>
+            <p>Creating a dungeon-crawler game to allow players to succeed.</p>
+            <button href="#" target="_blank" id="myBtn3" onclick="modalDisplay('myBtn3','myModal3')">View Project</button>
+            <div id="myModal3" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_space_pirates.jpg" alt="Space Pirates" style="width:100%;max-width:1000px">
+                <p>
+                  We designed and created a single player dungeon crawler game 
+                  featuring AI agents for path planning. The game was generated 
+                  through infinite procedural content, with adjustable difficulty 
+                  to help players succeed. The development spanned one semester, 
+                  involving a six-member team working with the C# programming 
+                  language. My contributions included the game's overall concept, 
+                  visual arts production, audio elements, testing, as well as the 
+                  creation of five distinct rewards categories (Access, Facility, 
+                  Sustenance, Glory, Praise).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="projects-column development">
+          <div class="projects-content">
+            <img src="assets/images/img_i_wet_my_plants.jpg" alt="I Wet My Plants" style="width:100%">
+            <h3>I Wet My Plants</h3>
+            <p>Helping individuals and companies organize their plants care needs.</p>
+            <button href="#" target="_blank" id="myBtn4" onclick="modalDisplay('myBtn4','myModal4')">View Project</button>
+            <div id="myModal4" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_i_wet_my_plants.jpg" alt="I Wet My Plants" style="width:100%;max-width:1000px">
+                <p>
+                  Our web app makes it easy for individuals or businesses to manage
+                  their plant care needs. Developed by a team of five over the 
+                  course of a semester using Python, HTML, CSS, JavaScript, and 
+                  SQL, the project was implemented with SCRUM principles for 
+                  effective collaboration. My responsibilities included the design 
+                  management, project write ups, personas, user stories, 
+                  storyboards, UML diagram, activity and sequence diagrams, 
+                  crafting database schema, conducting acceptance tests, coding 
+                  HTML/CSS pages, making demo videos and delivering presentations.
+                </p>
+              </div>
+            </div>
+          </div>
+       </div>
+        
+        <div class="projects-column code">
+          <div class="projects-content">
+          <img src="assets/images/img_target_trainer.jpg" alt="Target Trainer" style="width:100%">
+            <h3>Target Trainer</h3>
+            <p>A graphical editor for individuals to practice targeting for arcade games.</p>
+            <button href="#" target="_blank" id="myBtn5" onclick="modalDisplay('myBtn5','myModal5')">View Project</button>
+            <div id="myModal5" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_target_trainer.jpg" alt="Target Trainer" style="width:100%;max-width:1000px">
+                <p>
+                  I formed a graphical editor in JavaFX that lets the user create 
+                  targets for people to practice 2D targeting to help them improve 
+                  their performance in arcade-style video games. The editor allows 
+                  the user to create, resize, and position targets for the practice
+                  session, and then run a session where they click on the targets 
+                  one at a time. This project covered target creation, deletion, 
+                  resizing, selection and multiple selection, undo/redo, 
+                  clipboards and cut/copy/paste operations, and the deployment and 
+                  logging of the target practice session. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-column code">
+          <div class="projects-content">
+          <img src="assets/images/img_state_machine_editor.jpg" alt="State Machine Editor" style="width:100%">
+            <h3>State Machine Editor</h3>
+            <p>An interactive editor for building state machine diagrams for students.</p>
+            <button href="#" target="_blank" id="myBtn6" onclick="modalDisplay('myBtn6','myModal6')">View Project</button>
+            <div id="myModal6" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_state_machine_editor.jpg" alt="State Machine Editor" style="width:100%;max-width:1000px">
+                <p>
+                  I created a visual editor in JavaFX to demonstrate my skills with
+                  immediate-mode graphics, interaction with graphics, more complex 
+                  model-view-controller architectures, and multiple synchronized 
+                  views. The system is an interactive editor for building 
+                  state-machine diagrams. The editor allows users to select a tool 
+                  from a tool palette. Different tools allow the user to create 
+                  state nodes, connect states with transition links, move and edit
+                  items in the workspace, and pan the view. A property panel at 
+                  the right of the screen allows the user to edit details for a 
+                  state node or a transition link. Pressing the Delete key deletes 
+                  the selected item (if there is one) and any dependent items. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-column code">
+          <div class="projects-content">
+          <img src="assets/images/img_court_booking_system.jpg" alt="Court Booking System" style="width:100%">
+            <h3>Court Booking System</h3>
+            <p>A simple booking system for a university's popular tennis courts.</p>
+            <button href="#" target="_blank" id="myBtn7" onclick="modalDisplay('myBtn7','myModal7')">View Project</button>
+            <div id="myModal7" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_court_booking_system.jpg" alt="Court Booking System" style="width:100%;max-width:1000px">
+                <p>
+                  I built a user interface to demonstrate my skills with both the 
+                  iterative design process (task descriptions, sketch-based 
+                  prototypes, screen design, and task walkthroughs) and JavaFX 
+                  development (widgets, events, layout, and Model-View-Controller).
+                  The application is a simple booking system for the University of 
+                  Saskatchewan’s tennis courts. I determined the primary tasks for 
+                  the Court Booking System, created several design ideas for 
+                  supporting those tasks, and developed an MVC-based JavaFX UI 
+                  based on one of my designs. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="projects-column code">
+          <div class="projects-content">
+          <img src="assets/images/img_realtor_filter.jpg" alt="Realtor Filter" style="width:100%">
+            <h3>Realtor Filter</h3>
+            <p>An app to support potential buyers by setting filters on houses for sale.</p>
+            <button href="#" target="_blank" id="myBtn8" onclick="modalDisplay('myBtn8','myModal8')">View Project</button>
+            <div id="myModal8" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_realtor_filter.jpg" alt="Realtor Filter" style="width:100%;max-width:1000px">
+                <p>
+                  I coded a user interface to demonstrate my skills with basic 
+                  JavaFX development (including widgets, event handling, layout, 
+                  app functionality and the development of composite widgets). 
+                  The UI is for a simple JavaFX app that allows the user to set 
+                  filters in a list of houses for sale. The app provides controls 
+                  for filtering based on price, number of bedrooms, or the area of 
+                  the house in square feet. Filters provide range sliders which 
+                  allow the user to set both a lower and an upper amount for the 
+                  filter. The user can store the current set of filters as a 
+                  search; when they do this, the search is added to a second list. 
+                  Saved searches can be loaded by selecting them from the list and 
+                  clicking a button. The app will help realtors quickly locate 
+                  suitable homes to show to their clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-column design">
+          <div class="projects-content">
+          <img src="assets/images/img_identity_and_gender.jpg" alt="Identity and Gender" style="width:100%">
+            <h3>Identity and Gender</h3>
+            <p>Compiling the basic ideas for WGST students to use as an in class aid.</p>
+            <button href="#" target="_blank" id="myBtn9" onclick="modalDisplay('myBtn9','myModal9')">View Project</button>
+            <div id="myModal9" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_identity_and_gender_full.jpg" alt="Identity and Gender" style="width:100%;max-width:1000px">
+                <p>
+                  I formulated an infographic for students enrolled in Women and 
+                  Gender Studies courses. This resource serves as a reference for 
+                  key concepts related to identity and gender that are covered 
+                  within the program's curriculum. In the design process, I 
+                  employed my proficiency in Adobe Photoshop and InDesign software 
+                  programs to ensure clarity, organization, and professionalism 
+                  throughout the piece.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-column design">
+          <div class="projects-content">
+          <img src="assets/images/img_cosmos.jpg" alt="Cosmos" style="width:100%">
+            <h3>Cosmos</h3>
+            <p>Giving a local soccer team a logo for represention.</p>
+            <button href="#" target="_blank" id="myBtn10" onclick="modalDisplay('myBtn10','myModal10')">View Project</button>
+            <div id="myModal10" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_cosmos.jpg" alt="Cosmos" style="width:100%;max-width:1000px">
+                <p>
+                  Using Adobe Illustrator, I created a soccer team logo that 
+                  incorporates elements suggested by the coach and players. The 
+                  final design was intended to be versatile enough to look 
+                  attractive as a digital image as well as when screen printed onto
+                  the team's uniforms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-column design">
+          <div class="projects-content">
+          <img src="assets/images/img_temperature_correlation.jpg" alt="Temperature Correlation" style="width:100%">
+            <h3>Temperature Correlation</h3>
+            <p>Presenting a research report that highlights the most essential data.</p>
+            <button href="#" target="_blank" id="myBtn11" onclick="modalDisplay('myBtn11','myModal11')">View Project</button>
+            <div id="myModal11" class="modal">
+              <div class="projects-content-modal modal-content">
+                <span class="close">&times;</span>
+                <img src="assets/images/img_temperature_correlation.jpg" alt="Temperature Correlation" style="width:100%;max-width:1000px">
+                <p>
+                  Using Adobe InDesign, I laid out a research poster showcasing 
+                  essential data points and graphic illustrations from my study 
+                  examining the relationship between crime rates and temperatures 
+                  in Saskatoon. My poster earned recognition for exceptional 
+                  quality from a group of experts who evaluated its content and 
+                  presentation style.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <h2>More About Me</h2>
+      <p>
+        I am a User Experience Designer, Product Designer and Software Developer 
+        driven by a passion for problem-solving and a deep appreciation for beauty 
+        in all things. Travel has always been one of my greatest sources of 
+        inspiration, which led me to explore New Zealand and Australia for two 
+        exhilarating years. Since then, I have had the opportunity to explore 
+        different countries such as Japan, China, Costa Rica, and Mexico. Through 
+        these cultural experiences, I developed a keen eye for detail and an ability
+        to understand people from various walks of life. As a result, my empathy 
+        towards human behaviour guides my design process towards solutions that 
+        truly resonate with users. 
+      </p>
+      <p>
+        Outside of work, I channel my creative energy into photography, animation, 
+        printmaking and fabric dyeing. Not only do these mediums serve as stress 
+        relievers after long hours behind the computer screen, but they also 
+        allow me to think outside the box when crafting unique and compelling 
+        interfaces for the end user. Lastly, hiking, playing soccer, or simply 
+        getting my hands dirty gardening help me clear my mind and rejuvenate 
+        my spirits so that I can face another day full of challenges head-on. 
+        All in all, I believe design is a reflection of our own personality and 
+        values, therefore my goal is to create meaningful interactions that 
+        leave a lasting impact for people.
+      </p>
+      <div class="about-row">
+        <div class="about-column">
+          <img class="about-img" src="assets/images/img_me_hiking.jpg" alt="Gardening" style="width:100%;max-width:300px">
+        </div>
+        <div class="about-column">
+          <img class="about-img" src="assets/images/img_me_crafting.jpg " alt="Hiking" style="width:100%;max-width:300px">
+        </div>
+        <div class="about-column">
+          <img class="about-img" src="assets/images/img_me_gardening.jpg" alt="Crafting" style="width:100%;max-width:300px">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+    <h2>Let's Get In Touch! :)</h2>
+    <p>caila.robson-kullman@protonmail.com</p>
+    <p>306.221.3963</p>
+    </section>
+
+    <!-- Footer section -->
+    <hr class="divider"></hr>
+    <footer class = "footer">
+      <a href="mailto:caila.robson-kullman@protonmail.com" target="_blank">
+        <img src="assets/icons/icons8-email-circled-filled.svg" alt="Email" loading="lazy" class="socicon"/>
+      </a>
+      <a href="https://www.linkedin.com/in/caila-robson-kullman-72b5b3263/" target="_blank">
+        <img src="assets/icons/icons8-linkedin-circled-filled.svg" alt="Linkedin" loading="lazy" class="socicon"/>
+      </a>
+    </div>
+      <p>&copy; 2023 by Caila Robson-Kullman.</p>
+      <p>caila.robson-kullman@protonmail.com</p>
+      <p>306.221.3963</p>
+    </footer>
+    </section>
+
+    <!-- Scroll section -->
+    <i onclick="topFunction()" class="scroll-up" id="scroll-up">
+      <img src="assets/icons/icons8-arrow-up-circle-filled.svg" class="socicon up-arrow" alt="scroll-up"/>
+    </i>
+
+    <!-- Website scripts -->
+    <script src="assets/js/javascripts.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
